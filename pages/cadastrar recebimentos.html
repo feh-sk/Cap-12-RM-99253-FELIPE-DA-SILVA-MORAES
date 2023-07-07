@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fintech | Cadastrar recebimentos</title>
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <div class="box">
+        <div class="container">
+            <div class="logo">
+              <img src="..\images/logomarca.png" alt="Logomarca" class="responsive-logo">
+                <header>Cadastrar Recebimentos</header>
+            </div>
+            
+            <div class="page-container"> <!-- ficar atento, pois como a css estava dando conflito esse page só foi para parar de bugar o restante das paginas -->
+                <div class="input-group">
+                  <label for="nome-gasto">Nome do Recebimento</label>
+                  <input type="text" id="nome-gasto" class="input-field" placeholder="Digite o nome do gasto">
+                </div>
+                <div class="input-group">
+                  <label for="data-frequencia">Data e Frequência</label>
+                  <input type="text" id="data-frequencia" class="input-field" placeholder="Digite a data e frequência">
+                </div>
+                <div class="input-group">
+                  <label for="valor">Valor R$</label>
+                  <input type="text" id="valor" class="input-field" placeholder="Digite o valor">
+                </div>
+                <div class="input-group">
+                  <label for="categoria">Categoria</label>
+                  <input type="text" id="categoria" class="input-field" placeholder="Digite a categoria">
+                </div>
+                <div class="two-buttons">
+                  <button class="save-button">Salvar</button>
+                  <button class="add-button">Cadastrar mais recebimentos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FinancialPlus - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

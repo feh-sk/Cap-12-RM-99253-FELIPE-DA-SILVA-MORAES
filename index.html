@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fintech | Index</title>
+
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/menustyle.css">
+
+
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <header>
+    <nav>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+        <li><a href="#"><i class="fas fa-dollar-sign"></i> Cadastrar Gastos</a></li>
+        <li><a href="#"><i class="fas fa-money-bill-wave"></i> Recebimentos</a></li>
+        <li><a href="#"><i class="fas fa-chart-line"></i> Controle Financeiro</a></li>
+        <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <img class="logo" src="images/logomarca.png" alt="Logo da empresa">
+    <div class="jumbotron box">
+      <h1 class="display-4 text-center">Seja Bem-vindo </h1>
+      <p class="lead text-center">Gostaria de retomar o controle da sua vida financeira.</p>
+      <hr class="my-4">
+      <p class="text-center">Então venha fazer parte da Financial Plus</p>
+      <div class="text-center">
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <a class="btn btn-primary btn-lg custom-cursor" href="#" role="button">Saiba Mais</a>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="java/mobile-navbar.js"></script>
+  <script>
+
+    function loadContent(url) {
+      var contentDiv = document.getElementById('loaded-content');
+      fetch(url)
+        .then(response => response.text())
+        .then(content => {
+          contentDiv.innerHTML = content;
+        })
+        .catch(error => {
+          console.log('Erro ao carregar o conteúdo:', error);
+        });
+    }
+
+  </script>
+
+  <footer>
+    <p>&copy; 2023 FinancialPlus - Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
